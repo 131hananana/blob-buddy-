@@ -1,0 +1,9 @@
+# Blob Buddy dependencies.
+# NOTE: MediaPipe currently ships wheels for Python 3.9 - 3.12.
+#       Use Python 3.10-3.12 for the full webcam experience.
+pygame>=2.5
+numpy>=1.24,<2.0        # mediapipe 0.10.x requires numpy 1.x
+opencv-python>=4.8
+# The classic "solutions" API (Hands / FaceDetection) was removed from
+# mediapipe in the 0.10.3x releases, so stay on 0.10.21 or older.
+mediapipe>=0.10.9,<0.10.30
